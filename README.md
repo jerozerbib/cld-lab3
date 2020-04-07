@@ -53,7 +53,11 @@ In this task you will create an Auto Scaling Group with a scaling policy that au
 
    Observe how the Auto Scaling group launches the first instance.
 
+   We forgot to take a screenshot of this step, but from the screenshot below, you can see that the instance terminated (the second from the top) was the instance created by the auto-scale group.
+
 3. Manually terminate the instance in the Auto Scaling Group. Observe how the Auto Scaling Group automatically replaces it.
+
+   After terminating the instance, as stated in the screenshot below, we can see that the instance is replaced by the auto-scale group
 
 4. Connect the Auto Scaling group to the load balancer. Navigate to **Auto Scaling** > **Auto Scaling Groups**. Select the group. On the **Details** tab, click **Edit**. In the field **Load Balancers**, select your load balancer. Click **Save**.
 
@@ -73,6 +77,8 @@ In this task you will create an Auto Scaling Group with a scaling policy that au
    ![](./assets/Task1_10.png)
 
    *Instances launched by the auto-scale group*
+
+   We can see from the screenshot above that our auto-scale group created three instances. As we configured it to create one to three instances, it is a normal behavior. As CPU usage grows, it creates more and more instances, to a maximum of three.
 
    ![](./assets/Task1_6.png)
 
